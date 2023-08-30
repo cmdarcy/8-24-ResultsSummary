@@ -4,6 +4,26 @@
     src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
 }
 
+:root {
+    /* Primary */
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --Lightslatebluebackground: hsl(252, 100%, 67%);
+    --Lightroyalbluebackground: hsl(241, 81%, 54%);
+    --Violetbluecircle: hsla(256, 72%, 46%, 1);
+    --Persianbluecircle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+}
+
 html {
     box-sizing: border-box;
 }
@@ -18,7 +38,7 @@ p {
 
 /* Result card */
 .result-card {
-    background-color: hsl(252, 100%, 67%);
+    background: linear-gradient(var(--Lightslatebluebackground), var(--Lightroyalbluebackground));
     color: white;
     text-align: center;
     border-radius: 0 0 30px 30px;
@@ -44,7 +64,7 @@ p {
 
 .circle {
     border-radius: 50%;
-    background-color: hsla(256, 72%, 46%, 1);
+    background: linear-gradient(var(--Violetbluecircle), var(--Persianbluecircle));
     width: clamp(8rem, 25vw, 15rem);
     height: clamp(8rem, 25vw, 15rem);
     margin: 0 auto;
@@ -75,9 +95,73 @@ p {
 
 /* Summary Card */
 
+.summary-card {
+    margin: 2em;
+}
+
+.summary-card h2 {
+    color: var(--Darkgrayblue);
+}
+
+.category-row-card {
+    background-color: beige;
+    border-radius: 25px;
+    display: flex;
+    margin: 1.5em 0;
+    padding:0 1em;
+}
+
+.category-row-card img {
+    margin-right: 1em;
+}
+
+.category-row-card p {
+    margin-left: auto;
+    color: gray
+}
+
+.category-row-card span {
+    color: var(--Darkgrayblue);
+    font-weight: 700;
+}
+
+#reaction-card {
+    background-color: hsla(0, 100%, 67%, .05);
+}
+#reaction-card h3 {
+    color: var(--Lightred);
+}
+
+#memory-card {
+    background-color: hsla(39, 100%, 56%, .05);
+}
+
+#memory-card h3 {
+    color: var(--Orangeyyellow);
+}
+
+#verbal-card {
+    background-color: hsla(166, 100%, 37%, .05);
+}
+
+#verbal-card h3 {
+    color: var(--Greenteal);
+}
+
+#visual-card {
+    background-color: hsla(234, 85%, 45%, .05);
+}
+#visual-card h3 {
+    color: var(--Cobaltblue);
+}
+
 button {
     background-color: hsl(224, 30%, 27%);
     color: white;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    padding: 1em;
 }
 /* Footer */
 .attribution { 
