@@ -172,7 +172,14 @@ button {
     border-radius: 25px;
     border: none;
     padding: 1em;
+    cursor: pointer;
 }
+
+button:active {
+    background: linear-gradient(var(--Lightslatebluebackground), var(--Lightroyalbluebackground));
+}
+
+
 /* Footer */
 .attribution { 
     font-size: 11px; text-align: center; 
