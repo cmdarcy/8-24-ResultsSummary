@@ -149,11 +149,35 @@ p {
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease;
+    animation: decreasingWidth 1s ease-in-out;
 }
 
 .category-row-card:hover::after {
-    opacity: 1;
+        opacity: 1;
+        animation:  increasingWidth 1s ease-in-out;
 }
+
+@keyframes increasingWidth {
+
+    from {
+        width: 0;
+    } to {
+        width: 100%;
+    }
+
+}
+
+@keyframes decreasingWidth {
+
+    from {
+        width: 100%;
+    } to {
+        width: 0%;
+    }
+
+}
+
+
 
 #reaction-card {
     background-color: hsla(0, 100%, 67%, .05);
@@ -167,7 +191,7 @@ p {
     color: white;
 }
 #reaction-card::after {
-    background: linear-gradient(to right, var(--Lightred) 80%, hsla(0, 100%, 67%, .05) 20%);
+    background: linear-gradient(to right, var(--Lightred) 80%, transparent 20%);
 }
 
 #memory-card {
@@ -183,7 +207,7 @@ p {
 }
 
 #memory-card::after {
-    background: linear-gradient(to right, var(--Orangeyyellow) 92%, hsla(0, 100%, 67%, .05) 8%);
+    background: linear-gradient(to right, var(--Orangeyyellow) 92%, transparent 8%);
 }
 
 #verbal-card {
@@ -199,7 +223,7 @@ p {
 }
 
 #verbal-card::after {
-    background: linear-gradient(to right, var(--Greenteal) 61%, hsla(0, 100%, 67%, .05) 39%);
+    background: linear-gradient(to right, var(--Greenteal) 61%, transparent 39%);
 }
 
 #visual-card {
@@ -214,7 +238,7 @@ p {
 }
 
 #visual-card::after {
-    background: linear-gradient(to right, var(--Cobaltblue) 72%, hsla(0, 100%, 67%, .05) 28%);
+    background: linear-gradient(to right, var(--Cobaltblue) 72%, transparent 28%);
 }
 
 button {
@@ -227,7 +251,7 @@ button {
     cursor: pointer;
 }
 
-button:active {
+button:hover {
     background: linear-gradient(var(--Lightslatebluebackground), var(--Lightroyalbluebackground));
 }
 
