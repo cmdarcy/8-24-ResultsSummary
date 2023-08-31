@@ -24,8 +24,10 @@ Users should be able to:
 - **Bonus**: Use the local JSON data to dynamically populate the content
 
 ### Screenshot
-
+#### Desktop
 ![Desktop Sample](./assets/images/resultScreenshot.png)
+
+#### Mobile
 ![Mobile Sample](./assets/images/resultScreenshotmobile.png)
 
 
